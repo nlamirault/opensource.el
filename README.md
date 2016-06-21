@@ -19,7 +19,7 @@ Emacs client for the [Opensource API](https://api.opensource.org/)
 `package.el` is the built-in package manager in Emacs.
 
 *opensource.el* is available on the two major community maintained repositories -
-[MELPA STABLE](melpa-stable.milkbox.net), [MELPA](http://melpa.milkbox.net).
+[MELPA STABLE](https://stable.melpa.org), [MELPA](https://melpa.org).
 
 You can install *opensource.el* with the following commnad:
 
