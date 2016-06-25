@@ -1,4 +1,4 @@
-;;; opensource.el --- Emacs client for Opensource API
+;;; opensource.el --- Client for Opensource API
 
 ;; Author: Nicolas Lamirault <nicolas.lamirault@gmail.com>
 ;; URL: https://github.com/nlamirault/opensource.el
@@ -23,7 +23,7 @@
 
 ;;; Commentary:
 
-;; Provides an Opensource API client for Emacs.
+;; Provides an Opensource API client.
 
 ;;; Installation:
 
@@ -45,7 +45,7 @@
 ;; Customization
 
 (defgroup opensource nil
-  "Opensource API client for Emacs."
+  "Opensource API client."
   :group 'applications
   :link '(url-link :tag "Github" "https://github.com/nlamirault/opensource.el")
   :link '(emacs-commentary-link :tag "Commentary" "opensource API client"))
