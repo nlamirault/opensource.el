@@ -67,6 +67,126 @@ You can install *opensource.el* manually by placing it on your `load-path` and
 
 ## Usage
 
+### Get a list of all licenses
+
+```el
+ELISP> (opensource-list-licenses)
+[((id . "AAL")
+  (identifiers .
+               [((identifier . "AAL")
+                 (scheme . "SPDX"))
+                ((identifier . "License :: OSI Approved :: Attribution Assurance License")
+                 (scheme . "Trove"))])
+  (links .
+         [((note . "OSI Page")
+           (url . "https://opensource.org/licenses/AAL"))])
+  (name . "Attribution Assurance License")
+  (other_names .
+               [])
+  (superseded_by)
+  (keywords .
+            ["osi-approved" "discouraged" "redundant"])
+  (text .
+        [((media_type . "text/html")
+          (title . "HTML")
+          (url . "https://opensource.org/licenses/AAL"))]))
+ ((id . "AFL-3.0")
+  (identifiers .
+               [((identifier . "AFL-3.0")
+                 (scheme . "SPDX"))
+                ((identifier . "License :: OSI Approved :: Academic Free License (AFL)")
+                 (scheme . "Trove"))])
+  (links .
+         [((note . "OSI Page")
+           (url . "https://opensource.org/licenses/AFL-3.0"))])
+  (name . "Academic Free License, Version 3.0")
+  (other_names .
+               [])
+  (superseded_by)
+  (keywords .
+            ["osi-approved" "discouraged" "redundant"])
+  (text .
+        [((media_type . "text/html")
+          (title . "HTML")
+          (url . "https://opensource.org/licenses/AFL-3.0"))]))
+
+[...]
+```
+
+### Find all licenses by a keyword
+
+```el
+ELISP> (opensource-search-licenses "obsolete")
+[((id . "Apache-1.1")
+  (identifiers .
+               [((identifier . "Apache-1.1")
+                 (scheme . "SPDX"))])
+  (links .
+         [((note . "OSI Page")
+           (url . "https://opensource.org/licenses/Apache-1.1"))])
+  (name . "Apache Software License, Version 1.1")
+  (other_names .
+               [])
+  (superseded_by . "Apache-2.0")
+  (keywords .
+            ["discouraged" "obsolete" "osi-approved"])
+  (text .
+        [((media_type . "text/html")
+          (title . "HTML")
+          (url . "https://opensource.org/licenses/Apache-1.1"))]))
+ ((id . "Artistic-1.0")
+  (identifiers .
+               [((identifier . "Artistic-1.0")
+                 (scheme . "DEP5"))
+                ((identifier . "Artistic-1.0")
+                 (scheme . "SPDX"))])
+  (links .
+         [((note . "OSI Page")
+           (url . "https://opensource.org/licenses/Artistic-1.0"))])
+  (name . "Artistic License, Version 1.0")
+  (other_names .
+               [])
+  (superseded_by . "Artistic-2.0")
+  (keywords .
+            ["osi-approved" "discouraged" "obsolete"])
+  (text .
+        [((media_type . "text/html")
+          (title . "HTML")
+          (url . "https://opensource.org/licenses/Artistic-1.0"))]))
+
+[...]
+```
+
+### Get a license
+
+```el
+ELISP> (opensource-get-license "Apache-2.0")
+((id . "Apache-2.0")
+ (identifiers .
+              [((identifier . "Apache-2.0")
+                (scheme . "DEP5"))
+               ((identifier . "Apache-2.0")
+                (scheme . "SPDX"))
+               ((identifier . "License :: OSI Approved :: Apache Software License")
+                (scheme . "Trove"))])
+ (links .
+        [((note . "tl;dr legal")
+          (url . "https://tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29"))
+         ((note . "Wikipedia page")
+          (url . "https://en.wikipedia.org/wiki/Apache_License"))
+         ((note . "OSI Page")
+          (url . "https://opensource.org/licenses/Apache-2.0"))])
+ (name . "Apache License, Version 2.0")
+ (other_names .
+              [])
+ (superseded_by)
+ (keywords .
+           ["osi-approved" "popular" "permissive"])
+ (text .
+       [((media_type . "text/html")
+         (title . "HTML")
+         (url . "https://www.apache.org/licenses/LICENSE-2.0"))]))
+```
 
 
 ## Development
