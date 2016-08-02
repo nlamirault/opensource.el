@@ -2,7 +2,7 @@
 
 ;; Author: Nicolas Lamirault <nicolas.lamirault@gmail.com>
 ;; URL: https://github.com/nlamirault/opensource.el
-;; Version: 0.1.0
+;; Version: 0.2.0
 ;; Keywords: opensource
 
 ;; Package-Requires: ((s "1.11.0") (dash "2.12.1") (pkg-info "0.6.0") (request "0.2.0"))
@@ -27,7 +27,8 @@
 
 ;;; Installation:
 
-;; Available as a package in melpa.org.
+;; opensource is available on the two major community maintained repositories -                                                                                                     
+;; Melpa stable (https://stable.melpa.org), and Melpa (https://melpa.org)
 
 ;; (add-to-list 'package-archives
 ;;              '("melpa" . "https://melpa.org/packages/") t)
