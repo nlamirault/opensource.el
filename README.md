@@ -3,11 +3,11 @@
 [![Coverage Status](https://coveralls.io/repos/nlamirault/opensource.el/badge.png)](https://coveralls.io/r/nlamirault/opensource.el)
 
 Master :
-* [![MELPA Stable](https://stable.melpa.org/packages/opensource.el.svg)](https://stable.melpa.org/#/opensource.el)
+* [![MELPA Stable](https://stable.melpa.org/packages/opensource.svg)](https://stable.melpa.org/#/opensource)
 * [![Circle CI](https://circleci.com/gh/nlamirault/opensource.el/tree/master.svg?style=svg)](https://circleci.com/gh/nlamirault/opensource.el/tree/master)
 
 Develop:
-* [![Melpa Status](https://melpa.org/packages/opensource.el-badge.svg)](https://melpa.org/#/opensource.el)
+* [![Melpa Status](https://melpa.org/packages/opensource-badge.svg)](https://melpa.org/#/opensource)
 * [![Circle CI](https://circleci.com/gh/nlamirault/opensource.el/tree/develop.svg?style=svg)](https://circleci.com/gh/nlamirault/opensource.el/tree/develop)
 
 Emacs client for the [Opensource API](https://api.opensource.org/)
